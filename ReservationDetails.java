@@ -62,6 +62,9 @@ public class ReservationDetails {
             info.discountedCost = info.rooms*costPerNight*info.nights*0.1;
             info.totalCost = info.rooms*costPerNight*info.nights*0.9;
         }
+        else{
+            info.totalCost = info.rooms*costPerNight*info.nights;
+        }
         return info;
     }
 
